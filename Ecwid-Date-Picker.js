@@ -1,4 +1,4 @@
-Holaa
+
 ///
 
 Ecwid.OnPageLoaded.add(function(page) {
@@ -7,7 +7,7 @@ Ecwid.OnPageLoaded.add(function(page) {
 ec.order = ec.order || {};
 ec.order.extraFields = ec.order.extraFields || {};
 
-// Add a new optional text input 'How should we sign the package?' to shipping address form
+// Add a new optional text input 'How should we sign the package?' to shipping address form  Holaa
 ec.order.extraFields.wrapping_box_signature = {
     'title': 'How should we sign the package?',
     'textPlaceholder': 'Package sign',
