@@ -41,3 +41,5 @@
 Ecwid.refreshConfig(); 
 
 </script>
+
+<div id="cart-text" style="display:none;"><h3>Whoo-hoo! We're on the cart page.</h3> </div>
