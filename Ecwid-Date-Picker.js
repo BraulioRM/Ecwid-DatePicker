@@ -1,3 +1,4 @@
+///
 
 Ecwid.OnPageLoaded.add(function(page) {
     if (page.type == "CART") {
