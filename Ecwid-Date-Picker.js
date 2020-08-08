@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://app.ecwid.com/script.js?1045450" charset="utf-8"></script>
+<script type="text/javascript">
 //Ecwid Javascript
 
 
@@ -37,3 +39,5 @@
     };
 
 Ecwid.refreshConfig(); 
+
+</script>
