@@ -1,4 +1,7 @@
 
+Ecwid.OnPageLoaded.add(function(page) {
+    if (page.type == "CART") {
+   
 ec.order = ec.order || {};
 ec.order.extraFields = ec.order.extraFields || {};
 
@@ -12,4 +15,12 @@ ec.order.extraFields.wrapping_box_signature = {
     'checkoutDisplaySection': 'shipping_address'
 };
 
-Ecwid.refreshConfig();
+Ecwid.refreshConfig();        
+        
+        
+        
+        
+    }
+});
+
+
