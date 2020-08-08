@@ -2,7 +2,8 @@
 <script type="text/javascript">
 //Ecwid Javascript
 
-
+Ecwid.OnPageLoaded.add(function(page) {
+      
     // Customize time and date selection for order pickup datepicker
     ec.order.extraFields.pickup_time_select = {
         'title': 'Select date of pickup',
@@ -38,8 +39,8 @@
         }
     };
 
-Ecwid.refreshConfig(); 
-
+ Ecwid.refreshConfig(); 
+});
 </script>
 
 <div id="cart-text" style="display:none;"><h3>Whoo-hoo! We're on the cart page.</h3> </div>
