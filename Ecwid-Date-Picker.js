@@ -8,17 +8,17 @@ Ecwid.OnPageLoaded.add(function(page) {
         ec.order.extraFields = ec.order.extraFields || {};
 
         ec.order.extraFields.pickup_time_select = {
-        'title': 'Select date of pickup',
+        'title': 'Selecciona la fecha que requieres el arreglo',
         'required': true,
         'type': 'datetime',
-        'checkoutDisplaySection': 'pickup_details',
+        'checkoutDisplaySection': 'shipping_address',
         'orderDetailsDisplaySection': 'order_comments',
         // Default date picker presets
         'datePickerOptions': {
             'minDate': new Date(new Date().getTime() + 2*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
             'maxDate': new Date(2020, 12, 31),
             'showTime': true,
-            'incrementMinuteBy': 30,
+            'incrementMinuteBy': 180,
             // limit available hours for each week day
             'limitAvailableHoursWeekly': {
                 'MON': [
@@ -26,16 +26,22 @@ Ecwid.OnPageLoaded.add(function(page) {
                     ['14:00', '17:30']
                 ],
                 'TUE': [
-                    ['14:00', '17:30']
+                    ['09:00', '17:30']
                 ],
                 'WED': [
-                    ['01:00', '13:30']
+                    ['09:00', '17:30']
                 ],
                 'THU': [
-                    ['14:00', '23:30']
+                    ['09:00', '17:30']
                 ],
                 'FRI': [
-                    ['14:00', '17:30']
+                    ['09:00', '17:30']
+                ],
+                'SAT': [
+                    ['09:00', '17:30']
+                ],
+                'SUN': [
+                    ['09:00', '17:30']
                 ]
             }
         }
