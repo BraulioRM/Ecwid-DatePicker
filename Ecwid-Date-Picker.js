@@ -8,14 +8,14 @@ Ecwid.OnPageLoaded.add(function(page) {
         ec.order.extraFields = ec.order.extraFields || {};
 
         ec.order.extraFields.pickup_time_select = {
-        'title': 'Selecciona la fecha que requieres el arreglo',
+        'title': 'Selecciona la Fecha',
         'required': true,
         'type': 'datetime',
-        'checkoutDisplaySection': 'shipping_address',
+        'checkoutDisplaySection': 'shipping_methods',
         'orderDetailsDisplaySection': 'order_comments',
         // Default date picker presets
         'datePickerOptions': {
-            'minDate': new Date(new Date().getTime() + 2*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
+            'minDate': new Date(new Date().getTime() + 24*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
             'maxDate': new Date(2020, 12, 31),
             'showTime': true,
             'incrementMinuteBy': 180,
