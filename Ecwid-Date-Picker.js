@@ -2,28 +2,27 @@
 ///
 
 Ecwid.OnPageLoaded.add(function(page) {
-    if (page.type == "CART") {
+    if (page.type == "PRODUCT") {
 
         ec.order = ec.order || {};
         ec.order.extraFields = ec.order.extraFields || {};
 
         ec.order.extraFields.pickup_time_select = {
-        'title': 'Selecciona la Fecha',
+        'title': 'Selecciona la Fecha de entrega',
         'required': true,
         'type': 'datetime',
-        'checkoutDisplaySection': 'shipping_methods',
+        'checkoutDisplaySection': 'payment_details',
         'orderDetailsDisplaySection': 'order_comments',
         // Default date picker presets
         'datePickerOptions': {
-            'minDate': new Date(new Date().getTime() + 24*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
+            'minDate': new Date(new Date().getTime() + 72*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
             'maxDate': new Date(2020, 12, 31),
             'showTime': true,
             'incrementMinuteBy': 180,
             // limit available hours for each week day
             'limitAvailableHoursWeekly': {
                 'MON': [
-                    ['08:30', '13:30'],
-                    ['14:00', '17:30']
+                    ['09:00', '17:30']
                 ],
                 'TUE': [
                     ['09:00', '17:30']
