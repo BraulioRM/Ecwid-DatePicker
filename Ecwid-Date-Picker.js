@@ -11,6 +11,7 @@ Ecwid.OnPageLoaded.add(function(page) {
         'title': 'Selecciona la Fecha de entrega',
         'required': true,
         'type': 'datetime',
+        'available': true,
         'checkoutDisplaySection': 'payment_details',
         'orderDetailsDisplaySection': 'order_comments',
         // Default date picker presets
