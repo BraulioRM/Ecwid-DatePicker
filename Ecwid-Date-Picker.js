@@ -2,7 +2,7 @@
 ///
 
 Ecwid.OnPageLoaded.add(function(page) {
-    if (page.type == "PRODUCT") {
+    if (page.type == "CART") {
 
         ec.order = ec.order || {};
         ec.order.extraFields = ec.order.extraFields || {};
@@ -12,7 +12,7 @@ Ecwid.OnPageLoaded.add(function(page) {
         'required': true,
         'type': 'datetime',
         'available': true,
-        'checkoutDisplaySection': 'payment_details',
+        'checkoutDisplaySection': 'shipping_address',
         'orderDetailsDisplaySection': 'order_comments',
         // Default date picker presets
         'datePickerOptions': {
