@@ -8,7 +8,7 @@ Ecwid.OnPageLoaded.add(function(page) {
         ec.order.extraFields = ec.order.extraFields || {};
 
         ec.order.extraFields.pickup_time_select = {
-        'title': 'Selecciona la Fecha de entrega',
+        'title': 'Fecha de entrega',
         'required': true,
         'type': 'datetime',
         'available': true,
