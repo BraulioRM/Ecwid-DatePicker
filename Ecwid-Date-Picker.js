@@ -17,7 +17,7 @@ Ecwid.OnPageLoaded.add(function(page) {
         // Default date picker presets
         'datePickerOptions': {
             'minDate': new Date(new Date().getTime() + 72*60*60*1000), // Order is prepared for 2 hours minimum. Hiding 2 hours from the current time. Default is 0
-            'maxDate': new Date(2020, 12, 31),
+            'maxDate': new Date(2021, 12, 31),
             'showTime': true,
             'incrementMinuteBy': 180,
             // limit available hours for each week day
